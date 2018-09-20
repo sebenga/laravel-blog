@@ -66,7 +66,7 @@ class PostsController extends Controller
         $post->user_id = auth()->user()->id;
         $post->save();
 
-        return redirect('http://localhost/lsapp/public/posts')->with('success,', 'Post Created');
+        return redirect('http://laravel-blog/laravel-blog/public/posts')->with('success,', 'Post Created');
 
      }
 
@@ -95,7 +95,7 @@ class PostsController extends Controller
 
         //check for correct user
          if(auth()->user()->id !==$post->user_id){
-            return redirect('http://localhost/lsapp/public/posts')->with('error', 'Unauthorized Page');
+            return redirect('http://laravel-blog/laravel-blog/public/posts')->with('error', 'Unauthorized Page');
         }
 
         return view('posts.edit')->with('post',$post);
@@ -122,7 +122,7 @@ class PostsController extends Controller
         $post->body = $request->input('body');
         $post->save();
 
-        return redirect('http://localhost/lsapp/public/posts')->with('success,', 'Post Updated');
+        return redirect('http://localhost/laravel-blog/public/posts')->with('success,', 'Post Updated');
 
     }
 
@@ -138,10 +138,10 @@ class PostsController extends Controller
 
         //check for correct user
         if(auth()->user()->id !==$post->user_id){
-            return redirect('http://localhost/lsapp/public/posts')->with('error', 'Unauthorized Page');
+            return redirect('http://localhost/laravel-blog/public/posts')->with('error', 'Unauthorized Page');
         }
 
         $post->delete();
-        return redirect('http://localhost/lsapp/public/posts')->with('success,', 'Post removed');
+        return redirect('http://localhost/laravel-blog/public/posts')->with('success,', 'Post removed');
     }
 }

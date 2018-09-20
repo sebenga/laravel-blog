@@ -15,16 +15,16 @@
                     </ul>
                     <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                              <a class="nav-link" href="http://localhost/lsapp/public/">Home</span></a>
+                              <a class="nav-link" href="http://localhost/laravel-blog/public/">Home</span></a>
                             </li>
                             <li class="nav-item active">
-                              <a class="nav-link" href="http://localhost/lsapp/public/about">About</a>
+                              <a class="nav-link" href="http://localhost/laravel-blog/public/about">About</a>
                             </li>
                             <li class="nav-item active">
-                              <a class="nav-link disabled" href="http://localhost/lsapp/public/services">Services</a>
+                              <a class="nav-link disabled" href="http://localhost/laravel-blog/public/services">Services</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link disabled" href="http://localhost/lsapp/public/posts">Skills Sets</a>
+                                <a class="nav-link disabled" href="http://localhost/laravel-blog/public/posts">Skills Sets</a>
                             </li>        
                     </ul>
 
@@ -45,7 +45,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="http://localhost/lsapp/public/home">DashBoard</a>
+                                    <a class="dropdown-item" href="http://localhost/laravel-blog/public/home">DashBoard</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
